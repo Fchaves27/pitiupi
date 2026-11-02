@@ -7,5 +7,8 @@
 /plugins/screencast/build/
 /plugins/screencast/dist/
 /plugins/screencast/nbproject/private/
+/plugins/damas/build/
+/plugins/damas/dist/
+/plugins/damas/nbproject/private/
 /plugins/mpchat/out/
 /plugins/mpchat/dist/

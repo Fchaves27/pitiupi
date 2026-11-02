@@ -46,6 +46,7 @@ Plugins de referência hoje:
 | --- | --- | --- |
 | `chat` | Sala geral, peer por IP, TCP privado | `plugins/chat` |
 | `screencast` | Multicast ou unicast de tela | `plugins/screencast` |
+| `damas` | Jogo para dois peers com entrega confiável sobre UDP multicast | `plugins/damas` |
 
 Na interface, o texto das abas vem de `getDisplayName()` em cada plugin. O campo `menuCategory` no JSON alinha build/link com a documentação.
 

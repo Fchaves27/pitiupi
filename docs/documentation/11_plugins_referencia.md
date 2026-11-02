@@ -1,6 +1,6 @@
 # Plugins de referência
 
-Dois módulos buildáveis no catálogo; o chat unifica o antigo mpChat (multicast, unicast, TCP e canal TCP privado).
+Três módulos buildáveis no catálogo; o chat unifica o antigo mpChat (multicast, unicast, TCP e canal TCP privado).
 
 ## Comparativo
 
@@ -45,6 +45,16 @@ Fluxo resumido:
 Código de entrada: `plugins/screencast/src/pitiupi/screenCast/plugin/ScreenCastPlugin.java`.
 
 **Limitação:** largura de banda e MTU — frames grandes podem sofrer perda em UDP; adequado para demonstração, não para produção.
+
+## plugins/damas
+
+Jogo de damas para dois peers, com regras brasileiras. Detalhes de uso e protocolo: [plugins/damas/README.md](../../plugins/damas/README.md).
+
+1. Convite pela aba do plugin ou pela peer action na lista lateral.
+2. Mensagens em UDP multicast, com destinatário explícito; `DamasController` faz ACK, retransmissão e descarte de duplicatas.
+3. Cada peer valida o lance recebido com o próprio `DamasGame` antes de aplicá-lo.
+
+Código de entrada: `plugins/damas/src/pitiupi/damas/plugin/DamasPlugin.java`.
 
 ## Limitações (não são bugs)
 

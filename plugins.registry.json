@@ -13,6 +13,13 @@
       "build": "ant",
       "jar": "dist/pitiupi.screenCast.jar",
       "menuCategory": "Streaming"
+    },
+    {
+      "id": "damas",
+      "dir": "plugins/damas",
+      "build": "ant",
+      "jar": "dist/pitiupi.damas.jar",
+      "menuCategory": "Jogos"
     }
   ]
 }

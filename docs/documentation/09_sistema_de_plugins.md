@@ -51,7 +51,7 @@ MeusPlugins.plugins.NomeDaClasse
 Para serem carregados, os plugins devem estar empacotados como arquivos JAR
 e colocados no diretório plugins da aplicação.
 
-O catálogo de build (`plugins.registry.json`) cobre **chat** e **screencast** no gate de CI. Outros módulos podem ser buildados localmente e instalados via JAR em `PITIUPI_HOME/plugins` sem entrar no catálogo.
+O catálogo de build (`plugins.registry.json`) cobre **chat**, **screencast** e **damas** no gate de CI. Outros módulos podem ser buildados localmente e instalados via JAR em `PITIUPI_HOME/plugins` sem entrar no catálogo.
 
 ### Carregamento de plugins
 

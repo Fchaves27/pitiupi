@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="pitiupi.damas" default="default" basedir=".">
+    <description>Builds, tests, and runs the project pitiupi.damas.</description>
+    <import file="nbproject/build-impl.xml"/>
+
+    <property name="junit.standalone" location="../../pitiupi/test/lib/junit-platform-console-standalone-1.10.2.jar"/>
+
+    <target name="test" depends="jar" description="JUnit 5 (console launcher)">
+        <mkdir dir="${build.test.classes.dir}"/>
+        <javac srcdir="test"
+               destdir="${build.test.classes.dir}"
+               classpath="${run.classpath}:${junit.standalone}"
+               includeantruntime="false"
+               source="17"
+               target="17"
+               encoding="UTF-8"/>
+        <java classname="org.junit.platform.console.ConsoleLauncher" fork="true" failonerror="true">
+            <classpath>
+                <pathelement path="${build.test.classes.dir}"/>
+                <pathelement path="${run.classpath}"/>
+                <pathelement location="${junit.standalone}"/>
+            </classpath>
+            <arg value="--scan-classpath"/>
+            <arg value="${build.test.classes.dir}"/>
+        </java>
+    </target>
+</project>

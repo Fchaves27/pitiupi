@@ -26,6 +26,7 @@ Equivalente manual:
 cd pitiupi && ant jar
 cd plugins/chat && ant jar
 cd plugins/screencast && ant jar
+cd plugins/damas && ant jar
 ```
 
 Depois, para runtime local:
